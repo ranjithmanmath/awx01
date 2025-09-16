@@ -1,0 +1,8 @@
+---
+- name: Create Ansible folder
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Create ansible directory
+      command: mkdir /tmp/rma_test_test_awx01
